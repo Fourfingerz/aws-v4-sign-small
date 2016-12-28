@@ -17,6 +17,7 @@ npm install --save aws-v4-sign-small
 ```js
 var aws4 = require('aws-v4-sign-small')
 var opts = {
+  method: 'POST',
   host: 'sqs.us-east-1.amazonaws.com',
   path: '/'
   query: '?Action=ListQueues'
@@ -34,6 +35,7 @@ console.log('signed options: ', opts)
 <script>
 var aws4 = require('aws-v4-sign-small')
 var opts = {
+  method: 'POST',
   host: 'sqs.us-east-1.amazonaws.com',
   path: '/'
   query: '?Action=ListQueues'
